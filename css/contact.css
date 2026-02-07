@@ -1,0 +1,98 @@
+/* Kontakt forma */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+.newsletter-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.newsletter-text {
+  font-size: 16px;
+}
+
+.newsletter-group input[type="checkbox"] {
+  width: auto;
+  margin-left: 6px;
+}
+
+/* fiksna textarea */
+#message {
+  height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+
+#contact-form button {
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 12px auto 0 auto;
+}
+
+#contact-form button:hover {
+  background-color: #e65d00;
+}
+
+/* MODAL – kontakt poruka */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #1f1f1f;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  color: #f5f5f5;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  color: #aaa;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #ffffff;
+}

@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  #main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #main-nav a {
+    font-size: 0.85rem;
+  }
+
+  #pocetna {
+    padding: 60px 16px;
+  }
+
+  #pocetna h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.4rem;
+  }
+
+  .auth-wrapper {
+    flex-direction: column;
+  }
+
+  .novost-slika {
+    width: 100%;
+    max-width: 100%;
+  }
+}
