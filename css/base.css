@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #121212;
@@ -59,7 +62,6 @@ section h2 {
   margin-bottom: 12px;
 }
 
-/* Footer */
 #site-footer {
   padding: 16px 0 32px;
   text-align: center;

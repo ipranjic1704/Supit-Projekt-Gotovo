@@ -1,15 +1,9 @@
-// js/lightbox.js – Ishod 4 s navigacijom i logovima
 document.addEventListener("DOMContentLoaded", () => {
   console.log("lightbox.js loaded");
 
   const overlay = document.getElementById("lightbox-overlay");
   const lightboxImg = document.getElementById("lightbox-image");
   const closeBtn = document.getElementById("lightbox-close");
-
-  if (!overlay || !lightboxImg || !closeBtn) {
-    console.warn("Lightbox elementi nedostaju.");
-    return;
-  }
 
   const triggers = Array.from(document.querySelectorAll(".lightbox-trigger"));
   console.log("Broj lightbox-trigger slika:", triggers.length);
@@ -51,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     openLightbox(prevIndex);
   }
 
-  // klik na thumbnail
   triggers.forEach((img, index) => {
     img.style.cursor = "pointer";
     img.addEventListener("click", () => {
@@ -60,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // zatvaranje
   closeBtn.addEventListener("click", () => {
     console.log("Lightbox close (X)");
     closeLightbox();
@@ -73,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // tipkovnica: ESC, lijevo, desno
   window.addEventListener("keydown", (e) => {
     if (overlay.style.display !== "block") return;
 

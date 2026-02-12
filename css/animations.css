@@ -1,4 +1,3 @@
-/* Animacija sekcija pri skrolanju */
 .section-animate {
   opacity: 0;
   transform: translateY(30px);
